@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* background-image: url('./assets/redux.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(197, 219, 245);
+}
+
+.post_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* padding: 50px; */
+}
+
+.post_title, .post_content{
+    padding: 10px 0;
+    font-size: 20px;
+    
+}
+
+.post_heading{
+    padding: 50px 0 20px 50px;
+    color: #fff;
+    font-size: 32px;
+    color: #333
+}
+
+article{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: calc(100% / 3 - 65px);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    background-color: #645858;
+    color: #fff;
+}
+
+input{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+textarea{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 0 32px 32px;
+}
+
+label{
+    padding: 20px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.save_btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #645858;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.create_post{
+    margin: auto;
+    background-color: #645858;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.title{
+    margin-top: 50px;
+    padding: 20px;
+    color: #fff;
+}
+
+select{
+    padding: 20px;
+}
+
+.reaction_btn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 0;
+}
