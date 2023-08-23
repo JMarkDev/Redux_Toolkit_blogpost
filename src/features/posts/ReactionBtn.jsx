@@ -12,10 +12,6 @@ const reactionEmoji = {
 }
 
 const ReactionBtn = ({ post }) => {
-    ReactionBtn.propTypes = {
-        post: propTypes.object.isRequired
-    }
-
     const dispatch = useDispatch()
 
     const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => {
@@ -33,5 +29,10 @@ const ReactionBtn = ({ post }) => {
     
     return <div>{reactionButtons}</div>
 }
+
+ReactionBtn.propTypes = {
+    post: propTypes.object.isRequired
+}
+
 
 export default ReactionBtn
