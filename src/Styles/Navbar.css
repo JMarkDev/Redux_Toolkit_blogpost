@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: azure;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 0 10px;
+    list-style: none;
+    font-size: 20px;
+}
+
+li a:hover{
+    color: rgb(27, 30, 235)
+}
+
+.hide_links{
+    display: none;
+}
+
+.bars{
+    display: block;
+    visibility: hidden;
+}
+
+.bars_icon{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .bars{
+        visibility: visible;
+    }
+
+    ul{
+        display: none;
+    }
+}
+    

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectAllPosts, getPostsStatus, getPostsError, fetchPosts } from "./postSlice";
 import '../../index.css'
 import PostExcerpt from "./PostExcerpt";
-import { CButton, CSpinner } from '@coreui/react';
+import SpinnerTemp from "./SpinnerTemp";
 
 const PostList = () => {
     const dispatch = useDispatch()
@@ -20,10 +20,7 @@ const PostList = () => {
 
     let content;
     if(postStatus === 'loading') {
-        content =  <CButton disabled>
-                        <CSpinner component="span" size="sm" aria-hidden="true" />
-                            Loading...
-                    </CButton>
+        content =  <SpinnerTemp />
     } else if(postStatus === 'succeeded') { 
         const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
         content = orderedPosts.map(post => (
