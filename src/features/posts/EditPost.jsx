@@ -38,8 +38,8 @@ const EditPost = () => {
         
             try {
                 setRequestStatus("pending");
-                dispatch(updatePost({id: postId, title, content, userId, 
-                    reaction: post.reaction})).unwrap()
+                dispatch(updatePost({id: post.id, title, body: content, userId, 
+                    reactions: post.reactions})).unwrap()
 
                 setTitle("");
                 setContent("");
@@ -87,9 +87,9 @@ const EditPost = () => {
                 onChange={onContentChanged}
             />
             <button 
-                type="button">
+                type="button"
                 onClick={onSavePostClicked}
-                disabled={!canSave}
+                disabled={!canSave}>
                 Save Post
             </button>
         </form>

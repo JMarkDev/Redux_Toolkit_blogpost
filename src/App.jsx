@@ -5,6 +5,8 @@ import Layout from "./components/Layout"
 import SinglePostPage from "./features/posts/SinglePostPage"
 import { Routes, Route } from 'react-router-dom';
 import Header from "./components/Header"
+import EditPost from "./features/posts/EditPost"
+
 function App() {
 
   return (
@@ -18,7 +20,8 @@ function App() {
         <Route path="post">
           <Route index element={<AddPostForm />}/>
           <Route path=":postId" element={<SinglePostPage />} />
-        </Route>
+          <Route path="edit/:postId" element={<EditPost />} />
+          </Route>
       </Routes>
     </>
   );

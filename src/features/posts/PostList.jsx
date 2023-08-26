@@ -33,7 +33,6 @@ const PostList = () => {
 
   return (
     <section> 
-        <h2 className="post_heading">Posts</h2>
         <div className="post_list">
          {content}
         </div>

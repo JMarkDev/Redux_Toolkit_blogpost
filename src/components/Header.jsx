@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom"
 import "../Styles/Navbar.css"
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { useState } from "react"
 
 const Header = () => {
+  const [nav, setNav] = useState(false)
 
   const handleClick = () => {
-    console.log("hello")
+    setNav(!nav)
+    console.log('cute')
   }
   
   return (
@@ -16,18 +19,18 @@ const Header = () => {
           ReduxBlog
           </h2>
         </div>
-        <div className="links">
+        <div className={`links ${nav ? "showLinks" : ""}`}>
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link path="/home">Home</Link>
             </li>
             <li>
-              <Link to="/posts">Posts</Link>
+              <Link path="/posts">Posts</Link>
             </li>
           </ul>
         </div>
           <div className="bars">
-            <i className="bars_icon" onClick={() => handleClick()}><RxHamburgerMenu /></i>
+            <i className="bars_icon" onClick={handleClick}><RxHamburgerMenu /></i>
           </div>
       </nav>
     </div>
