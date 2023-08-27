@@ -11,18 +11,18 @@ function App() {
 
   return (
     <>
-     <Header />
-      <Routes>
-        <Route path="/" element={<Layout />}/>  
+    <Header />
+    <Routes>
+      <Route path="/" element={<Layout />}/>  
 
-        <Route index element={<PostList />} />
+      <Route index element={<PostList />} />
 
-        <Route path="post">
-          <Route index element={<AddPostForm />}/>
-          <Route path=":postId" element={<SinglePostPage />} />
-          <Route path="edit/:postId" element={<EditPost />} />
-          </Route>
-      </Routes>
+      <Route path="post">
+        <Route index element={<AddPostForm />}/>
+        <Route path=":postId" element={<SinglePostPage />} />
+        <Route path="edit/:postId" element={<EditPost />} />
+        </Route>
+    </Routes>
     </>
   );
 }

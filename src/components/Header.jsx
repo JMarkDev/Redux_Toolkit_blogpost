@@ -22,10 +22,10 @@ const Header = () => {
         <div className={`links ${nav ? "showLinks" : ""}`}>
           <ul>
             <li>
-              <Link path="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link path="/posts">Posts</Link>
+              <Link to="/post">Posts</Link>
             </li>
           </ul>
         </div>

@@ -12,7 +12,7 @@ const PostAuthor = ({ userId }) => {
 }
 
 PostAuthor.propTypes = {
-    userId: propTypes.number.isRequired
+    userId: propTypes.any
 }
 
 export default PostAuthor
