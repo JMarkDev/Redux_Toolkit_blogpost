@@ -23,12 +23,15 @@ const Header = () => {
             <div className="cancel">
             <i><FaTimes onClick={handleClick}/></i>
           </div>
-          <ul>
+          <ul className="link">
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/post">Posts</Link>
+            </li>
+            <li>
+              <Link to="/user">Users</Link>
             </li>
           </ul>
         </div>

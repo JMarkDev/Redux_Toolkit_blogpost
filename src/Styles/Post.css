@@ -18,3 +18,33 @@
     padding: 10px;
 }
 
+.user{
+    padding: 20px;
+}
+
+.renderedUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userList{
+    flex-direction: column;
+}
+
+.postTitles li, .userList li{
+    padding: 10px;
+    list-style: doted;
+}
+
+.postTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postTitle, .postTitles{
+    padding: 20px;
+}

@@ -1,9 +1,9 @@
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 100px;
     background-color: azure;
 }
 
@@ -11,8 +11,9 @@ ul{
     display: flex;
 }
 
+
 li{
-    padding: 0 10px;
+    padding: 0 20px;
     list-style: none;
     font-size: 20px;
 }
@@ -33,13 +34,21 @@ li a:hover{
 
 .cancel{
     display: none;
-    /* visibility: hidden; */
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
 }
 
 @media (max-width: 768px){
+    .logo{
+        margin-right: 120px;
+    }
+    .navbar{
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     a{
         display: block;
     }
