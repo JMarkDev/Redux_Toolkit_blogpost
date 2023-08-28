@@ -1,0 +1,20 @@
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 100%;
+    background-color: #645858;
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(102, 99, 99, 0.75);
+}
+
+.saveButton, .deleteButton{
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+}
+

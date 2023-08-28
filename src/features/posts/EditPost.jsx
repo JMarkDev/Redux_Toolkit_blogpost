@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import {selectPostById, updatePost, deletePost} from "./postSlice"
 import { useParams, useNavigate } from "react-router-dom"
-
+import "../../Styles/Post.css"
 import { selectAllUsers } from "../users/usersSlice";
 
 const EditPost = () => {
@@ -50,13 +50,14 @@ const EditPost = () => {
             } finally{
                 setRequestStatus("idle");
             }
-            }    
-        }
+        }    
+    }
     
     const usersOptions = users.map((user) => (
         <option 
             key={user.id} 
             value={user.id}>
+            {user.name}
         </option>
     ))
 
@@ -77,7 +78,7 @@ const EditPost = () => {
     }
 
     return (
-    <div>
+    <div className="edit">
       <section>
         <h2>Edit Post</h2>
         <form action="">
@@ -101,7 +102,8 @@ const EditPost = () => {
                 value={content}
                 onChange={onContentChanged}
             />
-            <button 
+            <button
+                className="saveButton" 
                 type="button"
                 onClick={onSavePostClicked}
                 disabled={!canSave}>

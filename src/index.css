@@ -54,13 +54,13 @@ article{
 }
 
 input{
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     font-size: 24px;
 }
 
 textarea{
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     font-size: 24px;
 }
@@ -99,7 +99,7 @@ label{
 }
 
 select{
-    padding: 15px;
+    padding: 10px;
 }
 
 .reaction_btn{

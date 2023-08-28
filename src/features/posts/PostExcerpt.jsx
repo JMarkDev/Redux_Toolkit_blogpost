@@ -12,7 +12,7 @@ const PostExcerpt = ({post}) => {
     <p className="post_credit">
         <Link to={`/post/${post.id}`}> View Post </Link>
         <PostAuthor userId={post.userId} />
-        <TimeAgo timestamp={post.date} />
+        <TimeAgo timestamp={post.date} />  
     </p>
     <div className="reaction">
       <ReactionBtn post={post} />

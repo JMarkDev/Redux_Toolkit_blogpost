@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "../Styles/Navbar.css"
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { FaTimes } from 'react-icons/fa'
 import { useState } from "react"
 
 const Header = () => {
@@ -8,7 +9,6 @@ const Header = () => {
 
   const handleClick = () => {
     setNav(!nav)
-    console.log('cute')
   }
   
   return (
@@ -20,6 +20,9 @@ const Header = () => {
           </h2>
         </div>
         <div className={`links ${nav ? "showLinks" : ""}`}>
+            <div className="cancel">
+            <i><FaTimes onClick={handleClick}/></i>
+          </div>
           <ul>
             <li>
               <Link to="/">Home</Link>
